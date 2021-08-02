@@ -142,14 +142,14 @@ class Join extends PluginBase implements Listener {
         });
         $form->setTitle(self::$ui['G']);
         $form->setContent(self::$msg['C']);
-	    $form->addButton("§l§bFLY\n§r§e Tap to use",0,"textures/ui/slow_falling_effect");
-	    $form->addButton("§l§6SIZE\n§r§eTap to use",0,"textures/items/totem");
-	    $form->addButton("§l§3PARTICLES\n§r§e Tap to use",0,"textures/items/fireworks");
-	    $form->addButton("§l§aC§bO§cL§dO§eR §fC§gH§6A§3T\n§r§eTap to use",0,"textures/ui/comment");
-	    $form->addButton("§l§cARROW TRAILS\n§r§eSoon...",0,"textures/items/arrow");
-	    $form->addButton("§l§gPETS\n§r§eSoon...",0,"textures/ui/icon_panda");
-	    $form->sendToPlayer($player);
-	      }
+        $form->addButton("§l§bFLY\n§r§e Tap to use", 0, "textures/ui/slow_falling_effect");
+        $form->addButton("§l§6SIZE\n§r§eTap to use", 0, "textures/items/totem");
+        $form->addButton("§l§3PARTICLES\n§r§e Tap to use", 0, "textures/items/fireworks");
+        $form->addButton("§l§aC§bO§cL§dO§eR §fC§gH§6A§3T\n§r§eTap to use", 0, "textures/ui/comment");
+        $form->addButton("§l§cARROW TRAILS\n§r§eSoon...", 0, "textures/items/arrow");
+        $form->addButton("§l§gPETS\n§r§eSoon...", 0, "textures/ui/icon_panda");
+        $form->sendToPlayer($player);
+    }
 
     public function getFly(Player $player) {
         $form = $this->createSimpleFor(function(Player $player, ?int $data) {
@@ -167,8 +167,8 @@ class Join extends PluginBase implements Listener {
             }
         });
         $form->setTitle("§l§bFly");
-        $form->addButton("§l§bFLY ON\n§r§7Tap to enable",0,"textures/ui/check");
-        $form->addButton("§l§cFLY OFF\n§r§7Tap to disable",0,"textures/ui/crossout");
+        $form->addButton("§l§bFLY ON\n§r§7Tap to enable", 0, "textures/ui/check");
+        $form->addButton("§l§cFLY OFF\n§r§7Tap to disable", 0, "textures/ui/crossout");
         $form->sendToPlayer($player);
     }
 
@@ -192,9 +192,9 @@ class Join extends PluginBase implements Listener {
             }
         });
         $form->setTitle("§6§lSize");
-        $form->addButton("§l§6Small\n§r§eToca para Cambiar",0,"textures/items/totem");
-        $form->addButton("§l§6Normal\n§r§eToca para Cambiar",0,"textures/items/totem");
-        $form->addButton("§l§6Big\n§r§eToca para Cambiar",0,"textures/items/totem");
+        $form->addButton("§l§6Small\n§r§eToca para Cambiar", 0, "textures/items/totem");
+        $form->addButton("§l§6Normal\n§r§eToca para Cambiar", 0, "textures/items/totem");
+        $form->addButton("§l§6Big\n§r§eToca para Cambiar", 0, "textures/items/totem");
         $form->sendToPlayer($player);
     }
 
